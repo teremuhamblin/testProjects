@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+dist/
+build/
+*.spec
+
+# Exclure les clés de déchiffrement éventuelles
+*.keys
+prod.keys
+title.keys
+
+# Si vos binaires font plus de 100 Mo (limite GitHub)
+# bin/*.exe
