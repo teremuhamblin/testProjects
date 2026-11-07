@@ -26,9 +26,9 @@
 ### 🎯 Vision du projet
 
 *`testProjects`* *résout la fragmentation des scripts système, outils de pentest, converters ou compilateurs en ligne de commande*. Il offre un **wrapper graphique moderne** qui :
-》》 1. Découvre automatiquement les binaires ou scripts déposés dans le répertoire dédié.
-》》 2. Isole leur exécution dans des threads séparés pour garantir une interface **fluide et réactive** à 60 FPS.
-》》 3. Stream en direct les logs console (*`stdout` / `stderr`*) dans un terminal graphique haute performance.
+1. 》》 Découvre automatiquement les binaires ou scripts déposés dans le répertoire dédié
+2. 》》 Isole leur exécution dans des threads séparés pour garantir une interface **fluide et réactive** à 60 FPS.
+3. 》》 Stream en direct les logs console (*`stdout` / `stderr`*) dans un terminal graphique haute performance.
 
 ---
 
