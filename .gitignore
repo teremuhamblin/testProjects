@@ -1,16 +1,23 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
 venv/
 env/
-dist/
-build/
-*.spec
+.venv/
 
-# Exclure les clés de déchiffrement éventuelles
-*.keys
-prod.keys
-title.keys
+# Fichiers de configuration / Secrets
+.env
+*.log
 
-# Si vos binaires font plus de 100 Mo (limite GitHub)
+# Outils compilés ou lourds (si vous ne souhaitez pas les versionner sur GitHub)
+# Décommentez la ligne ci-dessous si vos outils binaires ne doivent pas aller sur Git :
 # bin/*.exe
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
