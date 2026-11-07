@@ -1,0 +1,3 @@
+# Dépendances requises (optionnel pour l'instant car base pure Python standard)
+# customtkinter>=5.2.0  # (Décommentez si vous souhaitez migrer vers une UI moderne CustomTkinter)
+# pyinstaller>=6.0.0     # Utile pour compiler le lanceur lui-même en .exe
