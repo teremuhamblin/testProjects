@@ -19,9 +19,27 @@
 
 [Fonctionnalités](#-fonctionnalités-clés) • [Architecture](#-architecture--flux-dexécution) • [Sécurité](#-sécurité--bonnes-pratiques) • [Installation](#-installation--démarrage-rapide) • [Personnalisation](#-thèmes--customisation) • [Structure](#-structure-du-projet)
 
+</div>
+
 ---
 
-</div>
+<details open>
+<summary><b>📂 Cliquez pour déplier / replier le sommaire</b></summary>
+<br>
+
+| # | Section | Cible |
+| :-: | :--- | :--- |
+| **01** | 🎯 [Vision](#-vision-du-projet) | Orchestration & automatisation |
+| **02** | ✨ [Fonctionnalités](#-fonctionnalités-clés) | Tableau de bord des outils |
+| **03** | 🏗 [Architecture](#-architecture--flux-dexécution) | Composants & cycle de vie |
+| **04** | 🛡 [Sécurité](#-sécurité--bonnes-pratiques) | Isolation système |
+| **05** | 🚀 [Main](#-installation--démarrage-rapide) | Cloner, installer, lancer |
+| **06** | 🎨 [Thèmes](#-thèmes--customisation) | Visuel |
+| **07** | 📁 [Arborescence](#-structure-du-projet) | Sources |
+
+</details>
+
+---
 
 ### 🎯 Vision du projet
 
