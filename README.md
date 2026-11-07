@@ -63,18 +63,24 @@ graph TD
         B -->|2. Requête d'exécution| C[ProcessRunner Engine]
         D[Console Log Window] <---|5. Mise à jour UI thread-safe via after()| C
     end
+```
 
+```mermaid
     subgraph Core_Layer [" Moteur d'exécution asynchrone "]
         C -->|3. Spawn thread daemon| E[Worker Thread]
         E -->|4. Pipe I/O en direct| F[Subprocess Popen]
     end
+```
 
+```mermaid
     subgraph Binaries [" Espace Outils & Scripts "]
         F --> G[bin/tool1.exe]
         F --> H[bin/script.py]
         F --> I[bin/utility.bat]
     end
+```
 
+```mermaid
     classDef ui fill:#1f2937,stroke:#3b82f6,stroke-width:2px,color:#fff;
     classDef core fill:#111827,stroke:#10b981,stroke-width:2px,color:#fff;
     classDef bin fill:#374151,stroke:#f59e0b,stroke-width:2px,color:#fff;
