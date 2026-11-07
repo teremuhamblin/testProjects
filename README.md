@@ -6,15 +6,15 @@
 # ⚡ testProjects
 ### *Modular CLI Toolbox & Background Process Runner*
 
-[![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![UI Framework](https://img.shields.io/badge/GUI-CustomTkinter-2196F3?style=for-the-badge&logo=tkinter&logoColor=white)](https://github.com/TomSchimansky/CustomTkinter)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D6?style=for-the-badge)](https://github.com/teremuhamblin/testProjects)
-[![Version](https://img.shields.io/badge/Version-v1.0--stable-emerald?style=for-the-badge)](https://github.com/teremuhamblin/testProjects/releases)
-[![Security Audited](https://img.shields.io/badge/Security-Safe_Subprocess-red?style=for-the-badge&logo=securityscorecard&logoColor=white)](#-sécurité--bonnes-pratiques)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
+[![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-orange?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![UI Framework](https://img.shields.io/badge/GUI-CustomTkinter-orange?style=for-the-badge&logo=tkinter&logoColor=white)](https://github.com/TomSchimansky/CustomTkinter)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-orange?style=for-the-badge)](https://github.com/teremuhamblin/testProjects)
+[![Version](https://img.shields.io/badge/Version-v1.0--stable-orange?style=for-the-badge)](https://github.com/teremuhamblin/testProjects/releases)
+[![Security Audited](https://img.shields.io/badge/Security-Safe_Subprocess-orange?style=for-the-badge&logo=securityscorecard&logoColor=white)](#-sécurité--bonnes-pratiques)
+[![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
 <p align="center">
-  <b>Une suite logicielle modulaire conçue pour orchestrer, piloter et automatiser vos outils CLI et scripts favoris à travers une interface graphique moderne, ergonomique et non bloquante.</b>
+  <b>Une suite logicielle modulaire conçue pour ORCHESTRER, PILOTER et AUTOMATISER vos *outils CLI et scripts favoris à travers une interface graphique moderne*, ergonomique et non bloquante.</b>
 </p>
 
 [Fonctionnalités](#-fonctionnalités-clés) • [Architecture](#-architecture--flux-dexécution) • [Sécurité](#-sécurité--bonnes-pratiques) • [Installation](#-installation--démarrage-rapide) • [Personnalisation](#-thèmes--customisation) • [Structure](#-structure-du-projet)
@@ -47,9 +47,10 @@
 ---
 
 ### 🏗 Architecture & Flux d'exécution
-
+- 》》 **.github/workflows/**
 - **VOIR docs/ARCHITECTURE.md**
 - **VOIR docs/STRUCTURE.md**
+- **VOIR LICENSE**
 
 ### 1. Diagramme de composants
 
