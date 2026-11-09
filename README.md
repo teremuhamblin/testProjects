@@ -1,107 +1,213 @@
-###### README.md >> markdown.
-###### v1.0.0 Initiale.
-
 <div align="center">
 
 # ⚡ testProjects
-### *Modular CLI Toolbox & Background Process Runner*
 
-[![Python Version](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-orange?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![UI Framework](https://img.shields.io/badge/GUI-CustomTkinter-orange?style=for-the-badge&logo=tkinter&logoColor=white)](https://github.com/TomSchimansky/CustomTkinter)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-orange?style=for-the-badge)](https://github.com/teremuhamblin/testProjects)
-[![Version](https://img.shields.io/badge/Version-v1.0--stable-orange?style=for-the-badge)](https://github.com/teremuhamblin/testProjects/releases)
-[![Security Audited](https://img.shields.io/badge/Security-Safe_Subprocess-orange?style=for-the-badge&logo=securityscorecard&logoColor=white)](#-sécurité--bonnes-pratiques)
-[![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
+**Plateforme d'orchestration, d'automatisation d'outils et d'environnements de test sécurisés.**
 
-<p align="center">
-  <b>Une suite logicielle modulaire conçue pour ORCHESTRER, PILOTER et AUTOMATISER vos *outils CLI et scripts favoris à travers une interface graphique moderne*, ergonomique et non bloquante.</b>
-</p>
-
-[Fonctionnalités](#-fonctionnalités-clés) • [Architecture](#-architecture--flux-dexécution) • [Sécurité](#-sécurité--bonnes-pratiques) • [Installation](#-installation--démarrage-rapide) • [Personnalisation](#-thèmes--customisation) • [Structure](#-structure-du-projet)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-teremuhamblin%2FtestProjects-orange?style=flat-square&logo=github)](https://github.com/teremuhamblin/testProjects)
+[![Status](https://img.shields.io/badge/status-active-orange.svg?style=flat-square)](#)
+[![Security](https://img.shields.io/badge/security-hardened-orange.svg?style=flat-square)](#04--sécurités)
+[![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](#)
 
 </div>
 
 ---
 
-<details open>
+<details>
 <summary><b>📂 Cliquez pour déplier / replier le sommaire</b></summary>
+
 <br>
 
 | # | Section | Cible |
-| :-: | :--- | :--- |
-| **01** | 🎯 [Vision](#-vision-du-projet) | Orchestration & automatisation |
-| **02** | ✨ [Fonctions](#-fonctionnalités-clés) | Tableau de bord des outils |
-| **03** | 🏗 [Flux](#-architecture--flux-dexécution) | Composants & cycle de vie |
-| **04** | 🛡 [Sécurités](#-sécurité--bonnes-pratiques) | Isolation système |
-| **05** | 🚀 [Main](#-installation--démarrage-rapide) | Cloner, installer, lancer |
-| **06** | 🎨 [Thèmes](#-thèmes--customisation) | Visuel |
-| **07** | 📁 [Project](#-structure-du-projet) | Sources |
+|---|---|---|
+| 01 | [🎯 Vision](#01--vision) | Orchestration & automatisation |
+| 02 | [✨ Fonctions](#02--fonctions) | Tableau de bord des outils |
+| 03 | [🏗 Flux](#03--flux) | Composants & cycle de vie |
+| 04 | [🛡 Sécurités](#04--sécurités) | Isolation système |
+| 05 | [🚀 Main](#05--main) | Cloner, installer, lancer |
+| 06 | [🎨 Thèmes](#06--thèmes) | Visuel |
+| 07 | [📁 Project](#07--project) | Sources |
 
 </details>
 
 ---
 
-### 🎯 Vision du projet
+## 01 🎯 Vision
+> **Cible :** Orchestration & automatisation
 
-*`testProjects`* *résout la fragmentation des scripts système, outils de pentest, converters ou compilateurs en ligne de commande*. Il offre un **wrapper graphique moderne** qui :
-1. 》》 Découvre automatiquement les binaires ou scripts déposés dans le répertoire dédié
-2. 》》 Isole leur exécution dans des threads séparés pour garantir une interface **fluide et réactive** à 60 FPS.
-3. 》》 Stream en direct les logs console (*`stdout` / `stderr`*) dans un terminal graphique haute performance.
+Le projet **testProjects** a pour vocation de centraliser, coordonner et exécuter un ensemble hétérogène d'outils et de suites de tests au sein d'un environnement unifié.
 
----
-
-### ✨ Fonctionnalités clés
-
-| Fonctionnalité | Statut | Description |
-| :--- | :---: | :--- |
-| **Interface Graphique Moderne** | 🟢 Prêt | Interface réactive propulsée par **CustomTkinter** avec support natif Dark/Light mode. |
-| **Moteur Async Multi-Thread** | 🟢 Prêt | Exécution déportée évitant tout freeze de l'interface graphique. |
-| **Streaming I/O en direct** | 🟢 Prêt | Lecture continue bufferisée ligne par ligne des sorties consoles (`stdout` & `stderr`). |
-| **Hot-Reloading des Outils** | 🟢 Prêt | Rafraîchissement dynamique des exécutables présents dans `bin/` sans redémarrer l'application. |
-| **Gestionnaire d'Interruption** | 🟢 Prêt | Bouton d'arrêt d'urgence envoyant un signal de terminaison propre (`SIGTERM`). |
-| **Module Outil 1** | 🟡 En cours | *[Spécifiez ici le rôle du premier outil tiers]* |
-| **Module Outil 2** | 🟡 En cours | *[Spécifiez ici le rôle du deuxième outil tiers]* |
+- **Orchestration modulaire :** Enchaînement déterministe de scénarios de tests, d'analyses et de tâches techniques sans intervention manuelle.
+- **Automatisation continue :** Standardisation des pipelines d'exécution pour éliminer les dérives de configuration entre les environnements.
+- **Reproductibilité :** Garantie que chaque routine produit des résultats traçables et comparables dans le temps.
 
 ---
 
-### 🏗 Architecture & Flux d'exécution
-- 》》 **.github/workflows/**
-- **VOIR docs/ARCHITECTURE.md**
-- **VOIR docs/STRUCTURE.md**
-- **VOIR LICENSE**
+## 02 ✨ Fonctions
+> **Cible :** Tableau de bord des outils
 
-### 1. Diagramme de composants
+La solution expose une interface de commande et de supervision permettant de piloter l'ensemble des modules embarqués :
 
-*Le schéma ci-dessous illustre le découplage strict entre la vue graphique (GUI) et le moteur de processus* :
+| Module / Outil | Catégorie | Rôle & Action | Statut |
+|---|---|---|:---:|
+| `runner-engine` | Moteur principal | Planification et dispatch des jobs | En ligne |
+| `sec-audit` | Sécurité / Contrôle | Analyse statique et audit des configurations | En ligne |
+| `bench-suite` | Performance | Mesures de charges et métriques de latence | En ligne |
+| `log-collector` | Télémétrie | Centralisation et formatage des flux de logs | En ligne |
+
+---
+
+## 03 🏗 Flux
+> **Cible :** Composants & cycle de vie
+
+Chaque exécution suit un cycle de vie contrôlé afin de préserver l'intégrité du système hôte et la précision des mesures :
 
 ```mermaid
-flowchart TD
-    subgraph UI_Layer [" Couche Présentation (CustomTkinter) "]
-        A["main.py"] -->|"1. Sélection outil + arguments"| B["Contrôleur UI"]
-        B -->|"2. Requête d'exécution"| C["ProcessRunner Engine"]
-        D["Console Log Window"]
-    end
+flowchart LR
+    A[Initialisation] --> B[Chargement Config]
+    B --> C[Sandboxing & Isolation]
+    C --> D[Exécution des Outils]
+    D --> E[Collecte des Métriques]
+    E --> F[Nettoyage & Rapport]
+```
 
-    subgraph Core_Layer [" Moteur d'exécution asynchrone "]
-        C -->|"3. Spawn thread daemon"| E["Worker Thread"]
-        E -->|"4. Pipe I/O en direct"| F["Subprocess Popen"]
-    end
+Playground
+3 391 tokens
 
-    subgraph Binaries [" Espace Outils & Scripts "]
-        F --> G["bin/tool1.exe"]
-        F --> H["bin/script.py"]
-        F --> I["bin/utility.bat"]
-    end
+Model 09:29
+ThinkingThoughts
+Expand to view model thoughts
 
-    %% Retour asynchrone vers l'interface
-    C -.->|"5. Mise à jour thread-safe via after()"| D
+Voici une proposition complète et professionnelle pour votre fichier README.md, intégrant exactement votre sommaire dépliable ainsi que le développement de chaque section selon ses objectifs.
+Markdown
+<div align="center">
 
-    %% Styles graphiques
-    classDef ui fill:#1f2937,stroke:#3b82f6,stroke-width:2px,color:#fff;
-    classDef core fill:#111827,stroke:#10b981,stroke-width:2px,color:#fff;
-    classDef bin fill:#374151,stroke:#f59e0b,stroke-width:2px,color:#fff;
+# ⚡ testProjects
 
-    class A,B,D ui;
-    class C,E,F core;
-    class G,H,I bin;
+**Plateforme d'orchestration, d'automatisation d'outils et d'environnements de test sécurisés.**
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-teremuhamblin%2FtestProjects-blue?style=flat-square&logo=github)](https://github.com/teremuhamblin/testProjects)
+[![Status](https://img.shields.io/badge/status-active-success.svg?style=flat-square)](#)
+[![Security](https://img.shields.io/badge/security-hardened-red.svg?style=flat-square)](#04--sécurités)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](#)
+
+</div>
+
+---
+
+<details>
+<summary><b>📂 Cliquez pour déplier / replier le sommaire</b></summary>
+
+<br>
+
+| # | Section | Cible |
+|---|---|---|
+| 01 | [🎯 Vision](#01--vision) | Orchestration & automatisation |
+| 02 | [✨ Fonctions](#02--fonctions) | Tableau de bord des outils |
+| 03 | [🏗 Flux](#03--flux) | Composants & cycle de vie |
+| 04 | [🛡 Sécurités](#04--sécurités) | Isolation système |
+| 05 | [🚀 Main](#05--main) | Cloner, installer, lancer |
+| 06 | [🎨 Thèmes](#06--thèmes) | Visuel |
+| 07 | [📁 Project](#07--project) | Sources |
+
+</details>
+
+---
+
+## 01 🎯 Vision
+> **Cible :** Orchestration & automatisation
+
+Le projet **testProjects** a pour vocation de centraliser, coordonner et exécuter un ensemble hétérogène d'outils et de suites de tests au sein d'un environnement unifié.
+
+- **Orchestration modulaire :** Enchaînement déterministe de scénarios de tests, d'analyses et de tâches techniques sans intervention manuelle.
+- **Automatisation continue :** Standardisation des pipelines d'exécution pour éliminer les dérives de configuration entre les environnements.
+- **Reproductibilité :** Garantie que chaque routine produit des résultats traçables et comparables dans le temps.
+
+---
+
+## 02 ✨ Fonctions
+> **Cible :** Tableau de bord des outils
+
+La solution expose une interface de commande et de supervision permettant de piloter l'ensemble des modules embarqués :
+
+| Module / Outil | Catégorie | Rôle & Action | Statut |
+|---|---|---|:---:|
+| `runner-engine` | Moteur principal | Planification et dispatch des jobs | En ligne |
+| `sec-audit` | Sécurité / Contrôle | Analyse statique et audit des configurations | En ligne |
+| `bench-suite` | Performance | Mesures de charges et métriques de latence | En ligne |
+| `log-collector` | Télémétrie | Centralisation et formatage des flux de logs | En ligne |
+
+---
+
+## 03 🏗 Flux
+> **Cible :** Composants & cycle de vie
+
+Chaque exécution suit un cycle de vie contrôlé afin de préserver l'intégrité du système hôte et la précision des mesures :
+
+```mermaid
+flowchart LR
+    A[Initialisation] --> B[Chargement Config]
+    B --> C[Sandboxing & Isolation]
+    C --> D[Exécution des Outils]
+    D --> E[Collecte des Métriques]
+    E --> F[Nettoyage & Rapport]
+Initialisation : Validation des prérequis et des variables d'environnement.
+Setup Sandbox : Montage des contextes temporaires et des dépendances isolées.
+Dispatch & Exécution : Exécution séquentielle ou parallèle des routines.
+Post-Processing : Agrégation des sorties standards, parsing et génération des artéfacts.
+Teardown : Purge des fichiers volatils et libération des ressources.
+04 🛡 Sécurités
+Cible : Isolation système
+La sécurité opérationnelle est intégrée dès la conception :
+Exécution non-privilégiée : Interdiction des accès root superflus et confinement des routines au strict périmètre utilisateur nécessaire.
+Isolation des contextes : Recours à des conteneurs éphémères ou des environnements virtuels cloisonnés pour chaque tâche.
+Gestion stricte des secrets : Aucune clé ou donnée sensible en clair dans les sources ; passage par variables d'environnement injectées à la volée.
+Nettoyage automatique : Destruction systématique des états résiduels en fin de cycle pour prévenir toute persistance involontaire.
+05 🚀 Main
+Cible : Cloner, installer, lancer
+1. Prérequis
+git (>= 2.30)
+python (>= 3.10) ou runtime conteneurisé (docker)
+make ou bash
+2. Cloner le projet
+Bash
+git clone https://github.com/teremuhamblin/testProjects.git
+cd testProjects
+3. Installation
+Créez l'environnement de travail et installez les dépendances :
+Bash
+# Configuration d'un environnement virtuel
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Installation des dépendances
+pip install -r requirements.txt
+4. Lancement
+Bash
+# Lancement rapide du point d'entrée
+python main.py
+06 🎨 Thèmes
+Cible : Visuel
+L'affichage est conçu pour maximiser la lisibilité des diagnostics :
+Sorties console colorées : Badges et alertes dynamiques (INFO, WARN, ERROR, SUCCESS) pour une lecture rapide en terminal.
+Palette ergonomique : Contraste optimisé pour les terminaux en mode sombre (Dark Theme) et compatibilité avec les terminaux minimaux (TTY/CI-CD).
+Rapports visuels : Génération de résumés clairs et synthétiques exportables en Markdown ou HTML.
+07 📁 Project
+Cible : Sources
+Structure générale du référentiel :
+Text
+testProjects/
+├── config/             # Fichiers de configuration et règles de profilage
+├── docs/               # Documentation détaillée et schémas d'architecture
+├── modules/            # Outils et scripts d'orchestration autonomes
+├── src/                # Code source principal (moteur d'exécution)
+├── tests/              # Suites de tests unitaires et d'intégration
+├── .gitignore          # Exclusions de suivi Git
+├── LICENSE             # Licence du projet
+├── main.py             # Point d'entrée principal de la suite
+├── README.md           # Documentation de présentation
+└── requirements.txt    # Dépendances requises
+<div align="center">
+<sub>Maintenu par <a href="https://github.com/teremuhamblin">@teremuhamblin</a></sub>
+</div>
 ```
