@@ -89,7 +89,13 @@ flowchart LR
 - Nettoyage automatique : Destruction systématique des états résiduels en fin de cycle pour prévenir toute persistance involontaire.
 
 ## 05 🚀 Main
-- **Cible :** Cloner, installer, lancer
+> **Cible :** Cloner, installer, lancer
+-  🧰 Utilitaires Nintendo Switch
+Boîte à outils pour la gestion et le modding de fichiers Switch :
+* **Conversion & Patch :** XCI vers NSP (*4nxci*), patch de firmware requis (*renxpack*).
+* **Extraction :** Déchiffrement et inspection de packages NCA/XCI (*hactool*, *hactoolnet*).
+* **Homebrew & SD :** Création de forwarders NSP (*hacbrewpack*) et formatage SD en FAT32 (*guiformat*).
+
 1. *Prérequis*
 git (>= 2.30)
 python (>= 3.10) ou runtime conteneurisé (docker)
