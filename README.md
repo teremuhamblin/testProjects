@@ -143,4 +143,3 @@ VOIR docs/STRUCTURE.md
 <div align="center">
 <sub>Maintenu par <a href="https://github.com/teremuhamblin">@teremuhamblin</a></sub>
 </div>
-```
