@@ -1,95 +1,15 @@
+###### README.md >> markdown
+
 <div align="center">
 
 # ⚡ testProjects
 
 **Plateforme d'orchestration, d'automatisation d'outils et d'environnements de test sécurisés.**
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-teremuhamblin%2FtestProjects-orange?style=flat-square&logo=github)](https://github.com/teremuhamblin/testProjects)
-[![Status](https://img.shields.io/badge/status-active-orange.svg?style=flat-square)](#)
-[![Security](https://img.shields.io/badge/security-hardened-orange.svg?style=flat-square)](#04--sécurités)
-[![License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](#)
-
-</div>
-
----
-
-<details>
-<summary><b>📂 Cliquez pour déplier / replier le sommaire</b></summary>
-
-<br>
-
-| # | Section | Cible |
-|---|---|---|
-| 01 | [🎯 Vision](#01--vision) | Orchestration & automatisation |
-| 02 | [✨ Fonctions](#02--fonctions) | Tableau de bord des outils |
-| 03 | [🏗 Flux](#03--flux) | Composants & cycle de vie |
-| 04 | [🛡 Sécurités](#04--sécurités) | Isolation système |
-| 05 | [🚀 Main](#05--main) | Cloner, installer, lancer |
-| 06 | [🎨 Thèmes](#06--thèmes) | Visuel |
-| 07 | [📁 Project](#07--project) | Sources |
-
-</details>
-
----
-
-## 01 🎯 Vision
-> **Cible :** Orchestration & automatisation
-
-Le projet **testProjects** a pour vocation de centraliser, coordonner et exécuter un ensemble hétérogène d'outils et de suites de tests au sein d'un environnement unifié.
-
-- **Orchestration modulaire :** Enchaînement déterministe de scénarios de tests, d'analyses et de tâches techniques sans intervention manuelle.
-- **Automatisation continue :** Standardisation des pipelines d'exécution pour éliminer les dérives de configuration entre les environnements.
-- **Reproductibilité :** Garantie que chaque routine produit des résultats traçables et comparables dans le temps.
-
----
-
-## 02 ✨ Fonctions
-> **Cible :** Tableau de bord des outils
-
-La solution expose une interface de commande et de supervision permettant de piloter l'ensemble des modules embarqués :
-
-| Module / Outil | Catégorie | Rôle & Action | Statut |
-|---|---|---|:---:|
-| `runner-engine` | Moteur principal | Planification et dispatch des jobs | En ligne |
-| `sec-audit` | Sécurité / Contrôle | Analyse statique et audit des configurations | En ligne |
-| `bench-suite` | Performance | Mesures de charges et métriques de latence | En ligne |
-| `log-collector` | Télémétrie | Centralisation et formatage des flux de logs | En ligne |
-
----
-
-## 03 🏗 Flux
-> **Cible :** Composants & cycle de vie
-
-Chaque exécution suit un cycle de vie contrôlé afin de préserver l'intégrité du système hôte et la précision des mesures :
-
-```mermaid
-flowchart LR
-    A[Initialisation] --> B[Chargement Config]
-    B --> C[Sandboxing & Isolation]
-    C --> D[Exécution des Outils]
-    D --> E[Collecte des Métriques]
-    E --> F[Nettoyage & Rapport]
-```
-
-Playground
-3 391 tokens
-
-Model 09:29
-ThinkingThoughts
-Expand to view model thoughts
-
-Voici une proposition complète et professionnelle pour votre fichier README.md, intégrant exactement votre sommaire dépliable ainsi que le développement de chaque section selon ses objectifs.
-Markdown
-<div align="center">
-
-# ⚡ testProjects
-
-**Plateforme d'orchestration, d'automatisation d'outils et d'environnements de test sécurisés.**
-
-[![GitHub Repository](https://img.shields.io/badge/GitHub-teremuhamblin%2FtestProjects-blue?style=flat-square&logo=github)](https://github.com/teremuhamblin/testProjects)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-teremuhamblin%2FtestProjects-success?style=flat-square&logo=github)](https://github.com/teremuhamblin/testProjects)
 [![Status](https://img.shields.io/badge/status-active-success.svg?style=flat-square)](#)
-[![Security](https://img.shields.io/badge/security-hardened-red.svg?style=flat-square)](#04--sécurités)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](#)
+[![Security](https://img.shields.io/badge/security-hardened-success.svg?style=flat-square)](#04--sécurités)
+[![License](https://img.shields.io/badge/license-MIT-success.svg?style=flat-square)](#)
 
 </div>
 
