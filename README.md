@@ -71,62 +71,69 @@ flowchart LR
     C --> D[Exécution des Outils]
     D --> E[Collecte des Métriques]
     E --> F[Nettoyage & Rapport]
-Initialisation : Validation des prérequis et des variables d'environnement.
-Setup Sandbox : Montage des contextes temporaires et des dépendances isolées.
-Dispatch & Exécution : Exécution séquentielle ou parallèle des routines.
-Post-Processing : Agrégation des sorties standards, parsing et génération des artéfacts.
-Teardown : Purge des fichiers volatils et libération des ressources.
-04 🛡 Sécurités
-Cible : Isolation système
-La sécurité opérationnelle est intégrée dès la conception :
-Exécution non-privilégiée : Interdiction des accès root superflus et confinement des routines au strict périmètre utilisateur nécessaire.
-Isolation des contextes : Recours à des conteneurs éphémères ou des environnements virtuels cloisonnés pour chaque tâche.
-Gestion stricte des secrets : Aucune clé ou donnée sensible en clair dans les sources ; passage par variables d'environnement injectées à la volée.
-Nettoyage automatique : Destruction systématique des états résiduels en fin de cycle pour prévenir toute persistance involontaire.
-05 🚀 Main
-Cible : Cloner, installer, lancer
-1. Prérequis
+```
+
+- Initialisation : Validation des prérequis et des variables d'environnement.
+- Setup Sandbox : Montage des contextes temporaires et des dépendances isolées.
+- Dispatch & Exécution : Exécution séquentielle ou parallèle des routines.
+- Post-Processing : Agrégation des sorties standards, parsing et génération des artéfacts.
+- Teardown : Purge des fichiers volatils et libération des ressources.
+
+## 04 🛡 Sécurités
+> **Cible :** Isolation système
+- La sécurité opérationnelle est intégrée dès la conception :
+- Exécution non-privilégiée :
+- Interdiction des accès root superflus et confinement des routines au strict périmètre utilisateur nécessaire.
+- Isolation des contextes : Recours à des conteneurs éphémères ou des environnements virtuels cloisonnés pour chaque tâche.
+- Gestion stricte des secrets : Aucune clé ou donnée sensible en clair dans les sources ; passage par variables d'environnement injectées à la volée.
+- Nettoyage automatique : Destruction systématique des états résiduels en fin de cycle pour prévenir toute persistance involontaire.
+
+## 05 🚀 Main
+- **Cible :** Cloner, installer, lancer
+1. *Prérequis*
 git (>= 2.30)
 python (>= 3.10) ou runtime conteneurisé (docker)
 make ou bash
-2. Cloner le projet
-Bash
+
+2. *Cloner le projet*
+```bash
 git clone https://github.com/teremuhamblin/testProjects.git
 cd testProjects
-3. Installation
+```
+
+3. *Installation*
 Créez l'environnement de travail et installez les dépendances :
-Bash
-# Configuration d'un environnement virtuel
+**Bash**
+
+###### Configuration d'un environnement virtuel
+```python
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-# Installation des dépendances
+###### Installation des dépendances
+```requirements.txt
 pip install -r requirements.txt
+```
+
 4. Lancement
-Bash
+```bash
 # Lancement rapide du point d'entrée
 python main.py
-06 🎨 Thèmes
-Cible : Visuel
-L'affichage est conçu pour maximiser la lisibilité des diagnostics :
-Sorties console colorées : Badges et alertes dynamiques (INFO, WARN, ERROR, SUCCESS) pour une lecture rapide en terminal.
-Palette ergonomique : Contraste optimisé pour les terminaux en mode sombre (Dark Theme) et compatibilité avec les terminaux minimaux (TTY/CI-CD).
-Rapports visuels : Génération de résumés clairs et synthétiques exportables en Markdown ou HTML.
-07 📁 Project
-Cible : Sources
+```
+
+## 06 🎨 Thèmes
+> **Cible :** Visuel
+》》 L'affichage est conçu pour maximiser la lisibilité des diagnostics :
+- Sorties console colorées : Badges et alertes dynamiques (INFO, WARN, ERROR, SUCCESS) pour une lecture rapide en terminal.
+- Palette ergonomique : Contraste optimisé pour les terminaux en mode sombre (Dark Theme) et compatibilité avec les terminaux minimaux (TTY/CI-CD).
+- Rapports visuels : Génération de résumés clairs et synthétiques exportables en Markdown ou HTML.
+
+## 07 📁 Project
+> **Cible :** Sources
 Structure générale du référentiel :
-Text
-testProjects/
-├── config/             # Fichiers de configuration et règles de profilage
-├── docs/               # Documentation détaillée et schémas d'architecture
-├── modules/            # Outils et scripts d'orchestration autonomes
-├── src/                # Code source principal (moteur d'exécution)
-├── tests/              # Suites de tests unitaires et d'intégration
-├── .gitignore          # Exclusions de suivi Git
-├── LICENSE             # Licence du projet
-├── main.py             # Point d'entrée principal de la suite
-├── README.md           # Documentation de présentation
-└── requirements.txt    # Dépendances requises
+VOIR docs/STRUCTURE.md
+
 <div align="center">
 <sub>Maintenu par <a href="https://github.com/teremuhamblin">@teremuhamblin</a></sub>
 </div>
