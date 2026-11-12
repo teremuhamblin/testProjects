@@ -1,4 +1,4 @@
-###### docs/updates32.txt >> markdown 
+###### bin/updates32.txt >> markdown 
 # testProjects
 
 ### 1. Contexte général
